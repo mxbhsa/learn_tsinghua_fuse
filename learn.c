@@ -1467,32 +1467,6 @@ int main(int argc, char *argv[])
 			getCourseList(u);
 		}
 	}
-/*
-	userList = (struct User *)malloc(sizeof(struct User));
-	strcpy(userList->userid,"ma-xb12");
-	strcpy(userList->userpass,"Tsinghua2012");
-	userList->next = NULL;
-	userList->course_list = NULL;
-	getCourseInfo(userList);
-*/
-	//remove(bufPath);
-	//mkdir(bufPath,777);
-	//FILE *f = fopen("/home/mxb/fuse_temp/test.txt","w+");
-	//if(!f)
-	//	printf("fffffffffffffff\n");
-	//fprintf(f,"%s","asdfasdf");
-/*
-	struct User * u = (struct User *)malloc(sizeof(struct User));
-
-	strcpy(u->userid,"txd12");
-	strcpy(u->userpass,"Tsinghua2012");
-	u->next = userList;
-	u->course_list = NULL;
-	userList = u;
-	getCourseInfo(u);*/
-
-	//getDownloadInfo(userList->next,userList->next->course_list);
-	//exit(0);
 	getAllCourseInfo();
 	return fuse_main(argc, argv, &hello_oper, NULL);
 }
